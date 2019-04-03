@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+.result {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 15px;
+}
+</style>
+
+<body>
+    <div id="result1" class="result"></div>
+    <div id="result2" class="result"></div>
+    <div id="result3" class="result"></div>
+    <script type="text/javascript">
+    var items1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+    console.log(items1);
+    var x = items1.pop();
+    console.log(x);
+
+    document.getElementById("result1").innerHTML = x;
+    
+
+    var items2 = "A really long string";
+    console.log(items2);
+    var y = items2.length;
+    console.log(y);
+    var lastElement = items2.substr(-1);
+    console.log(lastElement);
+    document.getElementById("result2").innerHTML = lastElement;
+
+
+    var items3 = [[1, 2, 3],['one','two'],[true, false, true]];
+    console.log(items3);
+    var length = items3.length;
+    console.log(length);
+    console.log(items3[2]);
+    var lastArray = items3.pop();
+    console.log(lastArray);
+    document.getElementById("result3").innerHTML = lastArray;
+    </script>
+</body>
+
+</html>

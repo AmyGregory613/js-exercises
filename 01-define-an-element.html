@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#result {
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+		border: 1px solid black; 
+	}
+	</style>
+	
+</head>
+<body>
+	<div id="result">
+		
+	</div>
+
+	<script>
+		let myNumber = 45;
+		let myString = "You are a beautiful soul!";
+		let myBoolean = (1>0);
+		let fruits = ['apple', 'pear', 'plum','grape','peach']
+		let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+		let car = new Object ();
+		let myPerson = Object.create(null);
+		function Person(name, age, gender) {
+  			this.name = name;
+  			this.age = age;
+  			this.gender = gender;
+			}
+		var x = myFunction(4, 3);
+			document.getElementById("result").innerHTML = x;
+
+		function myFunction(a, b) {
+  			return a * b;
+  			let c = (a * b)
+  			console.log(c);        
+			}
+			myFunction();
+	</script>
+
+</body>
+</html>
