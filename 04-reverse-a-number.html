@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#output {
+			width: 50px;
+			height: 50px;
+			font-size: 20px;
+			font-weight: 500;
+			color: red;
+			border: 5px solid blue;
+			outline: 5px solid green;
+			margin: 10px;
+			text-align: center;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<div id="output"></div>
+
+<script type="text/javascript">
+	let n = 12345;
+    let output = document.getElementById("output");
+	function reverse_a_number(n){
+		n = n + "";
+		let reversed = n.split("").reverse().join("");
+		output.innerHTML= `${reversed}`;
+    }
+
+    reverse_a_number(12345)
+
+</script>
+</body>
+</html>
