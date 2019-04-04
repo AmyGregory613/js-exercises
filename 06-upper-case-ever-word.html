@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+
+		function titleCase(str) {
+   			var splitStr = str.toLowerCase().split(' ');
+   			for (var i = 0; i < splitStr.length; i++) {
+              // Assign it back to the array
+       		splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   	}
+		   // Directly return the joined string
+return splitStr.join(' ');
+}
+
+		document.write(titleCase("javascript is my most favorite language"));
+	</script>
+</body>
+</html>

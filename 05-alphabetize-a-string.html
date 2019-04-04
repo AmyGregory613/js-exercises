@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#output {
+			width: 250px;
+			height: 50px;
+			font-size: 30px;
+			font-weight: 800;
+			color: red;
+			border: 5px solid blue;
+			outline: 5px solid green;
+			margin: 10px;
+			text-align: center;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<div id="output"></div>
+
+<script type="text/javascript">
+	// let str = 'Andrew';
+    
+	
+	function alphabetize_string(str) {
+		let string = str.split('').sort().join('').trim();
+		
+		
+		document.getElementById("output").innerHTML = string;
+	}
+	console.log(alphabetize_string('Andrew'));
+
+	alphabetize_string(Andrew);
+
+    
+
+</script>
+</body>
+</html>
