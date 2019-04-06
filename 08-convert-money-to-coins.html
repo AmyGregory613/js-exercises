@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title></title>
+    <style type="text/css">
+		#output {
+			width: 250px;
+			height: 50px;
+			font-size: 30px;
+			font-weight: 800;
+			color: red;
+			border: 5px solid pink;
+			outline: 5px solid purple;
+			margin: 10px;
+			text-align: center;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="output"></div>
+    <script type="text/javascript">
+    // input: 46 cents
+    // output: 25, 10, 10, 1
+    function amountTocoins(amount, coins) {
+        if (amount === 0) {
+            return [];
+        } else {
+        	console.log("Starting amount: ", amount)
+            if (amount >= coins[0]) {
+                left = (amount - coins[0]);
+                console.log("Amount Left:", left);
+                return [coins[0]].concat(amountTocoins(left, coins));
+            } else {
+                coins.shift();
+                console.log("Coins after shifting : ", coins);
+                return amountTocoins(amount, coins);
+            }
+        }
+    }
+
+    var coinsConverted = amountTocoins(46, [25, 10, 5, 1]);
+    console.log(coinsConverted);
+    document.getElementById("output").innerHTML = coinsConverted;
+    </script>
+</body>
+
+</html>

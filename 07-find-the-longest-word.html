@@ -14,10 +14,8 @@
         var longestWord = str.split(' ').reduce(function(longest, currentWord) {
             return currentWord.length > longest.length ? currentWord : longest;
         }, "");
-        let x = longestWord;
-        console.log(longestWord);
+        document.getElementById("output").innerHTML = longestWord;
         return longestWord.length;
-        document.getElementById("output").innerHTML = x;
     }
     findLongestWord("A 24 week coding bootcamp is making me nerd out!");
     </script>
